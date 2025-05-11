@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Biblioteca</title>
+  <link rel="stylesheet" href="CSS/style_principal.css">
+</head>
+<body>
+  <nav>
+    <div class="has-submenu">
+        <a href="tela_visualizar_livro.html">Visualizar</a>
+    </div>
+
+    <div class="has-submenu">
+        <a href="tela_adicionar_livro.html">Adicionar</a>
+    </div>
+  </nav>
+
+      <div class="content">
+        <form id="formLivro">
+            <h2>Adicionar Livro</h2>
+        
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required>
+            
+            <label for="paginas">Número de páginas:</label>
+            <input type="text" id="paginas" required>
+
+            <label for="edicao">Edição:</label>
+            <input type="text" id="edicao" required>
+
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" required>
+        
+            <label for="editora">Editora:</label>
+            <input type="text" id="editora" required>
+
+            <label for="categoria">Categoria:</label>
+            <input type="text" id="categoria" required>
+
+            <label for="imagemUrl">URL da Imagem:</label>
+            <input type="text" id="imagemUrl">
+        
+            <button type="submit" onclick="salvarLivro()">Salvar</button>
+          </form>
+      </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
